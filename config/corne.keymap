@@ -70,10 +70,10 @@
 
         bluetooth {
             bindings = <
-                &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &trans        &trans        &trans        &trans        &trans
-                &trans        &trans        &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans        &trans        &trans        &trans        &trans        &trans        &trans
-                &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
-                                                          &trans        &trans        &trans        &trans        &trans        &trans
+                &bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &trans        &trans        &trans        &trans        &trans
+                &studio_unlock &trans        &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans        &trans        &trans        &trans        &trans        &trans        &trans
+                &trans         &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
+                                                           &trans        &trans        &trans        &trans        &trans        &trans
             >;
         };
 
@@ -86,6 +86,17 @@
             >;
         };
 
+        studio_extra1 {
+            status = "reserved";
+        };
+
+        studio_extra2 {
+            status = "reserved";
+        };
+
+        studio_extra3 {
+            status = "reserved";
+        };
 
     };
 };
