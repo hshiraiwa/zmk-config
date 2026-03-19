@@ -5,7 +5,11 @@ include:
     shield: corne_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: corne_left
+    artifact-name: corne_left_with_studio
+
+  - board: nice_nano@2.0.0/nrf52840/zmk
+    shield: corne_left
+    artifact-name: corne_left_no_studio
 
   - board: nice_nano@2.0.0/nrf52840/zmk
     shield: corne_right
