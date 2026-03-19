@@ -86,17 +86,7 @@
             >;
         };
 
-        studio_extra1 {
-            status = "reserved";
-        };
 
-        studio_extra2 {
-            status = "reserved";
-        };
-
-        studio_extra3 {
-            status = "reserved";
-        };
 
     };
 };
