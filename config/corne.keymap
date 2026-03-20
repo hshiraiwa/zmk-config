@@ -5,7 +5,16 @@
  */
 
 
-
+#undef ZMK_BEHAVIORS_KEEP_ALL
+#define ZMK_BEHAVIORS_KEEP_KP
+#define ZMK_BEHAVIORS_KEEP_MO
+#define ZMK_BEHAVIORS_KEEP_TOG
+#define ZMK_BEHAVIORS_KEEP_BT
+#define ZMK_BEHAVIORS_KEEP_OUT
+#define ZMK_BEHAVIORS_KEEP_STUDIO_UNLOCK
+#define ZMK_BEHAVIORS_KEEP_C_VOL_UP
+#define ZMK_BEHAVIORS_KEEP_C_VOL_DN
+#define ZMK_BEHAVIORS_KEEP_C_MUTE
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -74,7 +83,7 @@
         bluetooth {
             bindings = <
                 &bt BT_CLR     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &trans        &trans        &trans        &trans        &trans
-                &studio_unlock &trans        &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans        &trans        &trans        &trans        &trans        &trans        &trans
+                &trans         &trans        &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans        &trans        &trans        &trans        &trans        &trans        &trans
                 &trans         &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
                                                            &trans        &trans        &trans        &trans        &trans        &trans
             >;
